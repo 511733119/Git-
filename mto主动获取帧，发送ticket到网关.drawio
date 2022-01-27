@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-27T22:50:36.281Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="a5X6i0FF_jj_82NSE6aT" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-27T22:55:03.830Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="7a_DkLBOExqcBM1KpR8h" version="16.4.11" type="github">
   <diagram id="jcY7ooaBt1fVpuYnFyNR" name="Page-1">
     <mxGraphModel dx="1483" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -323,11 +323,20 @@
         <mxCell id="A4tvJZTRH_C_EzSOmPlB-119" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-116" target="A4tvJZTRH_C_EzSOmPlB-118">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A4tvJZTRH_C_EzSOmPlB-116" value="向centrum发送FETCH_MTO_INFO请求channel数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-116" value="向centrum发送FETCH_MTO_INFO请求mto通道channel数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1090" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-121" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-118" target="A4tvJZTRH_C_EzSOmPlB-120">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="A4tvJZTRH_C_EzSOmPlB-118" value="centrum返回channel通道给mto" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1290" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-120" value="结束" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="50" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-122" value="mto获取通道channel信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="120" width="150" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
