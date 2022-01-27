@@ -1,1 +1,320 @@
-<mxfile host="app.diagrams.net" modified="2022-01-27T21:52:15.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="gSttTGksdl9OLv3YU5pi" version="16.4.11" type="github"><diagram id="jcY7ooaBt1fVpuYnFyNR" name="Page-1">dZHBEoIgEIafhrtCpZ3N7NLJQ2dGNmEGXQdptJ4+HSRjrBPLt//PsruEZc1YGN7JKwrQhEZiJOxEKI0jlk7HTJ6O7HeJA7VRYhGtoFQv8M6FPpSAPhBaRG1VF8IK2xYqGzBuDA6h7I46rNrxGjagrLje0psSVjqa0mTlF1C19JXjw9FlGu7FSye95AKHL8RywjKDaF3UjBnoeXh+Ls53/pP9fMxAa38YpmB9e7oEG2L5Gw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-27T22:44:15.365Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="5EPLkAwflrdfIiqnNVF6" version="16.4.11" type="github">
+  <diagram id="jcY7ooaBt1fVpuYnFyNR" name="Page-1">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-1" value="mto主动向centrum拉取数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="50" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-2" target="A4tvJZTRH_C_EzSOmPlB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-2" value="MTOFrameEngine类FrameFetchThread线程" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="90" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-3" target="A4tvJZTRH_C_EzSOmPlB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-3" value="从centrum按照最大数量拉取数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-5" target="A4tvJZTRH_C_EzSOmPlB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-5" value="构建ticket&lt;br&gt;存储frame和ticket" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-7" target="A4tvJZTRH_C_EzSOmPlB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-7" value="把帧包装成FrameEnvoloper，放到frameEnvoloperMap，给后面TicketSendThread线程用" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-9" target="A4tvJZTRH_C_EzSOmPlB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-9" value="把帧放到packs的map" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5" y="450" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-11" target="A4tvJZTRH_C_EzSOmPlB-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-11" value="清除帧的单条短信列表" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5" y="520" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-13" target="A4tvJZTRH_C_EzSOmPlB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-13" value="j将帧放进frameMap" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-15" target="A4tvJZTRH_C_EzSOmPlB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-15" value="遍历ticket，从frameMap获取ticket对应的帧" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-17" target="A4tvJZTRH_C_EzSOmPlB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-17" value="把帧放进queueTickets本地队列" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="310" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-19" target="A4tvJZTRH_C_EzSOmPlB-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-19" value="queueTickets" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-21" target="A4tvJZTRH_C_EzSOmPlB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-21" value="&amp;nbsp;判断通道是否可用，不可用则关闭，登录连接新通道" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-26" target="A4tvJZTRH_C_EzSOmPlB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-26" value="MTOFrameEngine类TicketSendThread线程" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="100" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-28" value="mto向运营商网关提交ticket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="70" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-29" target="A4tvJZTRH_C_EzSOmPlB-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-29" value="从frameEnvoloperMap获取帧" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="410" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-31" target="A4tvJZTRH_C_EzSOmPlB-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#00FF00;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-31" target="A4tvJZTRH_C_EzSOmPlB-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-31" value="ticket状态为等待？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="500" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-33" target="A4tvJZTRH_C_EzSOmPlB-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-33" value="设置ticket过期时间，放进处理中的ticket缓存slideHandler" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="610" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-35" target="A4tvJZTRH_C_EzSOmPlB-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-35" value="是否超速处理" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-37" target="A4tvJZTRH_C_EzSOmPlB-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-37" value="拼接参数，通过运营商通道接口发送数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-39" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="580" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-40" value="&lt;font color=&quot;#b08d6a&quot;&gt;“是”则表明等待发送给网关，“否”则表示ticket已处理过，待确认ticket和frame就行&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#FFFF33;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="550" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-41" target="A4tvJZTRH_C_EzSOmPlB-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-41" value="frameEnvoloper计数减1，如果帧的所有ticket已经处理完，则清除frameEnvoloperMap、packs对应帧" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-43" value="&lt;font color=&quot;#000033&quot;&gt;否&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="710" y="520" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-44" target="A4tvJZTRH_C_EzSOmPlB-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-44" target="A4tvJZTRH_C_EzSOmPlB-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1085" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-44" value="设置帧状态为“已处理”" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="885" y="600" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-46" target="A4tvJZTRH_C_EzSOmPlB-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-46" target="A4tvJZTRH_C_EzSOmPlB-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-46" value="放到ticketCache" style="whiteSpace=wrap;html=1;fillColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="885" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-48" value="结束" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="765" y="910" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-55" value="waitCommitFrames" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="595" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-57" value="用于进行帧的确认的本地队列" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1061" y="600" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-60" target="A4tvJZTRH_C_EzSOmPlB-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-60" value="ticketCache" style="ellipse;whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-62" value="用于进行ticket的确认的本地队列" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1051" y="700" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-63" target="A4tvJZTRH_C_EzSOmPlB-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-63" value="MTOFrameEngine类的FrameCommitThread线程" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="320" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000033;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-64" target="A4tvJZTRH_C_EzSOmPlB-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#B08D6A;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-64" target="A4tvJZTRH_C_EzSOmPlB-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-64" value="获取需要确认的帧" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-67" value="mto进行帧的确认" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="290" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#B08D6A;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-68" target="A4tvJZTRH_C_EzSOmPlB-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-68" target="A4tvJZTRH_C_EzSOmPlB-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-68" value="遍历帧，分别对普通短信、长短信进行属性的处理" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1515" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-70" target="A4tvJZTRH_C_EzSOmPlB-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-70" value="如果有子ticket，遍历设置子ticket属性" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-72" value="&lt;font color=&quot;#000000&quot;&gt;普通短信&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#B08D6A;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="470" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-73" target="A4tvJZTRH_C_EzSOmPlB-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-73" value="获取通道channel" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-75" target="A4tvJZTRH_C_EzSOmPlB-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-75" value="封装为ORequest对象，发送给netty" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-78" value="长短信" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1645" y="540" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-79" target="A4tvJZTRH_C_EzSOmPlB-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-79" value="等待future回调" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-81" target="A4tvJZTRH_C_EzSOmPlB-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-81" value="netty返回响应结果" style="ellipse;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-82" target="A4tvJZTRH_C_EzSOmPlB-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-82" value="结果封装成TemplateResult放进queueResultMap" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-87" target="A4tvJZTRH_C_EzSOmPlB-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-87" value="获取的result的请求id对不上，则重新获取" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-89" value="删除GSMS_MTO_FRAME对应帧数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="2540" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-91" value="匹配成功" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="370" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-92" target="A4tvJZTRH_C_EzSOmPlB-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-92" value="获取待确认ticket" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="855" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-95" target="A4tvJZTRH_C_EzSOmPlB-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-95" value="FrameTicketProcessor类的CommitTicketThread线程" style="whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="955" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-96" value="mto进行ticket的确认" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1025" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-98" target="A4tvJZTRH_C_EzSOmPlB-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-98" value="更新GSMS_MTO_TICKET数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="860" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1410" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1850" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-100" value="循环" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000033;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="862.5" width="120" height="47.5" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-106" target="A4tvJZTRH_C_EzSOmPlB-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-106" value="FrameTicketProcessor类的RemoveInvalidTicketThread线程" style="whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-107" value="mto清除无用的ticket数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="1050" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-108" target="A4tvJZTRH_C_EzSOmPlB-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-108" value="找出GSMS_MTO_TICKET中frameID不在GSMS_MTO_FRAME的数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-110" target="A4tvJZTRH_C_EzSOmPlB-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-110" value="删除GSMS_MTO_TICKET对应数据" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1080" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;entryX=0.431;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="A4tvJZTRH_C_EzSOmPlB-112" target="A4tvJZTRH_C_EzSOmPlB-108">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="1150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="755" y="1170" />
+              <mxPoint x="260" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A4tvJZTRH_C_EzSOmPlB-112" value="睡眠后循环" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="695" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
