@@ -1,1 +1,253 @@
-<mxfile host="app.diagrams.net" modified="2022-01-28T01:24:17.466Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" version="16.4.11" etag="s0rnm8zAjGuyfnpOdJbP" type="github"><diagram id="NArSTjgk6fB1Y-mOn16n">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-28T09:08:29.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="ZwWJ0xXQw5AeM1-lSWat" version="16.4.11" type="github">
+  <diagram id="NArSTjgk6fB1Y-mOn16n" name="第 1 页">
+    <mxGraphModel dx="1394" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="159618QsnPJDQl67N11D-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-1" target="159618QsnPJDQl67N11D-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-1" target="159618QsnPJDQl67N11D-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="159618QsnPJDQl67N11D-1" target="159618QsnPJDQl67N11D-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="600" />
+              <mxPoint x="430" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="159618QsnPJDQl67N11D-1" target="159618QsnPJDQl67N11D-67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-1" value="AlonePoolFrameExecutor类netty监听" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-2" target="159618QsnPJDQl67N11D-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-2" value="把MTO发过来取帧的请求先放到本地队列" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-4" value="FETCH_FRAME" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-5" target="159618QsnPJDQl67N11D-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-5" value="commitQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-7" target="159618QsnPJDQl67N11D-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-7" value="获取请求id，mto标识，获取ticket的数据量" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="260" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-9" target="159618QsnPJDQl67N11D-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-9" value="根据mto标识获取运营商通道" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="260" width="95" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317.5" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-11" value="根据运营商通道，查出待发送数据量" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1117.5" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-15" target="159618QsnPJDQl67N11D-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-15" value="根据帧ID从GSMS_CENTRUM_FRAME获取帧数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="260" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-16" target="159618QsnPJDQl67N11D-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-16" value="遍历帧，设置帧的通道、端口等，并更新帧的状态到表中" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1565" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-18" value="MTR做的入库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="330" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-21" target="159618QsnPJDQl67N11D-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-21" value="根据数据库信息和帧的状态，将帧状态更新为over（已发送）" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1765" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-23" target="159618QsnPJDQl67N11D-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-23" value="根据帧的状态分组" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1965" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-25" target="159618QsnPJDQl67N11D-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-25" value="HADNLE状态（处理中）的帧组装为pack" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2165" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-27" target="159618QsnPJDQl67N11D-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-27" value="把pack按照centrum：fetchedFrame为key放进redis" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2165" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-29" target="159618QsnPJDQl67N11D-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-29" target="159618QsnPJDQl67N11D-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-29" value="pack放进本地队列" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1965" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-31" value="fetchFrameQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1965" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-33" target="159618QsnPJDQl67N11D-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-33" value="pack里的帧id都放进handlingFetchFrameMap本地map" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="160" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-35" target="159618QsnPJDQl67N11D-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-35" value="内存移除掉ABANDON状态的帧" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1527.5" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-37" value="netty返回给MTO" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="160" width="102.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-40" target="159618QsnPJDQl67N11D-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-40" value="判断当前frame是否为正在处理中，更新数据库GSMS_MSG_FRAME状态为1（处理中）；" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="440" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-42" value="COMMIT_FRAME" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="430" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-43" target="159618QsnPJDQl67N11D-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-43" value="删除GSMS_CENTRUM_FRAME、GSMS_CENTRUM_FRAME_CHANNEL相应数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="440" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-45" target="159618QsnPJDQl67N11D-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-45" value="frame放进本地队列" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-47" target="159618QsnPJDQl67N11D-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-47" value="commitFrameQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-49" value="确认帧的本地待处理队列" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="410" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-50" target="159618QsnPJDQl67N11D-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-50" value="更新GSMS_MSG_FRAME相应记录" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1255" y="440" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-52" value="记录ticket到GSMS_MTO_TICKET表" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-54" target="159618QsnPJDQl67N11D-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-54" value="检查用户补发状态" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-57" target="159618QsnPJDQl67N11D-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-57" value="根据计费类型判断是否需要修改状态报告结果" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="570" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-59" target="159618QsnPJDQl67N11D-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-59" value="设置运营商相关属性" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="845" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-61" target="159618QsnPJDQl67N11D-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-61" value="错误码关系维护" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-63" target="159618QsnPJDQl67N11D-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-63" value="reportQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1245" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-66" value="STATE_REPORT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="570" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-67" target="159618QsnPJDQl67N11D-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-67" target="159618QsnPJDQl67N11D-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-67" value="缓存可用状态？" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-70" value="moReportQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-72" value="commitQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-74" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="495" y="760" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-75" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="680" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-77" value="MO_REPORT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="680" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-78" target="159618QsnPJDQl67N11D-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-78" value="保存状态报告到GSMS_STATEREPORT" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1445" y="570" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-80" target="159618QsnPJDQl67N11D-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-80" value="如果用户类型是MIDGATE，保存到GSMS_MID_CALLBACK_REPORT" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1667.5" y="570" width="192.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-82" value="存储补发记录到GSMS_RESEND_RECORD" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="570" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-84" value="centrum模块" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="80" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
