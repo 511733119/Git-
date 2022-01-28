@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-28T09:08:29.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="ZwWJ0xXQw5AeM1-lSWat" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-28T09:09:31.345Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Cwwi2DSqetlYHNszhXDw" version="16.4.11" type="github">
   <diagram id="NArSTjgk6fB1Y-mOn16n" name="第 1 页">
     <mxGraphModel dx="1394" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -215,16 +215,16 @@
           <mxGeometry x="430" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-70" value="moReportQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="600" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-72" value="commitQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="820" width="120" height="60" as="geometry" />
+          <mxGeometry x="430" y="780" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-74" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="495" y="760" width="30" height="20" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-75" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="570" y="680" width="30" height="20" as="geometry" />
+          <mxGeometry x="560" y="690" width="30" height="20" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-77" value="MO_REPORT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="180" y="680" width="90" height="20" as="geometry" />
@@ -241,11 +241,17 @@
         <mxCell id="159618QsnPJDQl67N11D-80" value="如果用户类型是MIDGATE，保存到GSMS_MID_CALLBACK_REPORT" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1667.5" y="570" width="192.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-82" target="159618QsnPJDQl67N11D-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-82" value="存储补发记录到GSMS_RESEND_RECORD" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1910" y="570" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-84" value="centrum模块" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="70" y="210" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-85" value="netty返回" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="2140" y="567.5" width="80" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
