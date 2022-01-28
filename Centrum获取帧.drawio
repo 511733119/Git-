@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-28T09:12:01.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="oJzDuUHSJQvzWKUnNWqJ" version="16.4.11" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-28T09:53:45.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="psNBHSJSKNOf_B9wHJVh" version="16.4.11" type="github">
   <diagram id="NArSTjgk6fB1Y-mOn16n" name="第 1 页">
     <mxGraphModel dx="1394" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -169,6 +169,9 @@
         <mxCell id="159618QsnPJDQl67N11D-50" value="更新GSMS_MSG_FRAME相应记录" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1255" y="440" width="115" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-52" target="159618QsnPJDQl67N11D-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-52" value="记录ticket到GSMS_MTO_TICKET表" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1420" y="440" width="120" height="60" as="geometry" />
         </mxCell>
@@ -252,6 +255,57 @@
         </mxCell>
         <mxCell id="159618QsnPJDQl67N11D-85" value="netty返回" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="2140" y="567.5" width="80" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-87" target="159618QsnPJDQl67N11D-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-87" target="159618QsnPJDQl67N11D-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-87" value="错误码自动转发，ticket放进commitReportQueue" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-89" value="commitReportQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-91" target="159618QsnPJDQl67N11D-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-91" value="&#xa;&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;克隆ticket，设置相关属性，并插入GSMS_MTO_TICKET&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-96" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-93" target="159618QsnPJDQl67N11D-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-93" target="159618QsnPJDQl67N11D-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="159618QsnPJDQl67N11D-93" target="159618QsnPJDQl67N11D-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-93" value="批次数量变更" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-95" value="&#xa;&#xa;localPackCounterQueue&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-97" value="&#xa;&#xa;remotePackCounterQueue&#xa;&#xa;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="350" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-99" target="159618QsnPJDQl67N11D-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-99" value="异步处理下行话单的执行生命周期时间" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="159618QsnPJDQl67N11D-101" target="159618QsnPJDQl67N11D-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-101" value="frameQueue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2530" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="159618QsnPJDQl67N11D-103" value="netty返回" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="2720" y="425" width="100" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
